@@ -44,20 +44,22 @@ public class CajeroAutomatico {
                 }
 
                 case 3 ->{
-                    System.out.println("Ingresa el monto a retirar:");
-
-
-                    do{
+                    do {
+                        System.out.println("Ingresa el monto a retirar:");
                         System.out.print("::: $");
                         retirar = sc.nextDouble();
                         sc.nextLine();
-                        if(saldo < retirar){
-                            System.out.println("El saldo no es suficiente, ingresa otra cantidad:");
-                        } else{
-                            saldo -= retirar;
+
+                        if (saldo < retirar) {
+                            System.out.println("El saldo no es suficiente.");
                         }
-                    }while(saldo < retirar);
+                    } while (saldo < retirar);
+
+                    saldo -= retirar;
                     System.out.println("Saldo retirado: $"+retirar);
+                    System.out.println("Retiro exitoso.");
+
+
                 }
 
 
