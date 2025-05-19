@@ -2,8 +2,7 @@ package hospital;
 
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Principal {
     public static void main(String[] args) {
         // 2. Utiliza la clase Scanner para solicitar los siguientes datos desde la consola:
@@ -24,9 +23,9 @@ public class Principal {
 
         sc.close(); //ceramos el scanner
 
-        //5.3 Llama al método mostrarInformacion() para  mostrar los datos en consola:
+        //5.3 Llama al metodo mostrarInformacion() para  mostrar los datos en consola:
         p1.mostrarInformacion();
 
-        System.out.println("***************************************************");
+
     }
 }
