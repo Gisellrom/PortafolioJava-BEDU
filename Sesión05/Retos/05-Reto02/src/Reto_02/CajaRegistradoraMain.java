@@ -1,5 +1,8 @@
 package Reto_02;
 
+/***
+ * Reto 02: Sistema de pago con múltiples métodos
+ * */
 public class CajaRegistradoraMain {
     public static void main(String[] args) {
         MetodoPago[] pagos = {

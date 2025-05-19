@@ -1,13 +1,12 @@
 package Reto_02;
 
+//Basae común
 public abstract class MetodoPago implements Autenticable {
     protected double monto;
 
     public MetodoPago(double monto) {
         this.monto = monto;
     }
-
-    public abstract boolean autenticar();
 
     public abstract void procesarPago();
 
