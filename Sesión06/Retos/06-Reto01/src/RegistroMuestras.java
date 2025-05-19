@@ -1,6 +1,10 @@
 
 import java.util.*;
 
+/****
+* Reto 01: Registro y análisis de muestras genéticas
+***/
+
 public class RegistroMuestras {
     public static void main(String[] args) {
 
@@ -32,7 +36,7 @@ public class RegistroMuestras {
         // TODO: Agrega aquí las asociaciones ID → Investigador
         muestrasInvestigador.put("M-001", "Dra. López");
         muestrasInvestigador.put("M-002", "Dr. Hernández");
-        muestrasInvestigador.put("M-003", "Dra. Rivera");
+        muestrasInvestigador.put("M-003", "Dra. Rivers");
 
         System.out.println("\n👩‍🔬 Asignación de muestras a investigadores:");
         for (Map.Entry<String, String> entry : muestrasInvestigador.entrySet()) {
