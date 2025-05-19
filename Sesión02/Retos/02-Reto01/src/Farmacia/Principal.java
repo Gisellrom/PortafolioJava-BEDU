@@ -1,5 +1,7 @@
 package Farmacia;
-
+/**
+ *  Reto 01: Simulador de farmacia con descuento
+ * */
 import java.util.Scanner;
 
 public class Principal {
@@ -8,7 +10,7 @@ public class Principal {
         SimuladorFarmacia md1 = new SimuladorFarmacia();
         Scanner sc = new Scanner(System.in);
 
-        //2. Solicitar al usuario que introduzca los siguientes datos:
+        //2. Solicitar al usuario que introduzca los siguientes datos: nombre, precio unitario y cantidad de piezas
         System.out.print("Ingresa el nombre del medicamento: \n:::");
         md1.medicamento = sc.nextLine();
 

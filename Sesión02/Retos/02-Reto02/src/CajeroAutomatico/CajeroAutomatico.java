@@ -15,7 +15,7 @@ public class CajeroAutomatico {
         Double deposito = 0.0;
         Double retirar = 0.0;
 
-
+        //3. Muestra un menú interactivo en consola:
         do{
             System.out.println("Bienvenido al cajero automático");
             System.out.println("1. Consultar saldo");
@@ -26,11 +26,12 @@ public class CajeroAutomatico {
             opcion = sc.nextInt();
             sc.nextLine();
 
+            // 5. Uitliza un switch para manejar las opciones
             switch(opcion){
-                case 1 -> { //Consultar salto
+                case 1 -> { //Consultar salto -> Mostrar el saldo actual
                     System.out.println("Tu saldo actual es: $" + saldo);
                 }
-                case 2 -> {
+                case 2 -> { //Depositar dinero -> Pedir monto a depositar y sumarlo al saldo
                     System.out.print("Ingresa el monto a depositar:");
                     System.out.print(" \n::: $");
                     deposito = sc.nextDouble();
@@ -43,7 +44,7 @@ public class CajeroAutomatico {
                     System.out.println("Deposito realizado. Saldo actualizado: $"+saldo);
                 }
 
-                case 3 ->{
+                case 3 ->{ //Retirar dinero, pedir monto a retirar y validar si hay saldo suficiente, si no hay, mostrar un mensaje
                     do {
                         System.out.println("Ingresa el monto a retirar:");
                         System.out.print("::: $");
@@ -59,11 +60,10 @@ public class CajeroAutomatico {
                     System.out.println("Saldo retirado: $"+retirar);
                     System.out.println("Retiro exitoso.");
 
-
                 }
 
 
-                case 4 -> {
+                case 4 -> { //salir
                     System.out.println("Gracias por utilizar el cajero. ¡Adios!");
                 }
 
