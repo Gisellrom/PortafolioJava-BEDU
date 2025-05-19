@@ -1,5 +1,8 @@
 package Reto_01;
 
+/***
+ * Reto 01: Registro y comparación de facturas
+ */
 public class Main {
     public static void main(String[] args) {
         // Creamos dos facturas con el mismo folio
