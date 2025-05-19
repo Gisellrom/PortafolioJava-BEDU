@@ -1,5 +1,8 @@
 package Reto_01;
 
+/**
+ * Reto 01: Reserva de vuelos
+ * **/
 public class Principal {
     public static void main(String[] args) {
         // Crear un pasajero

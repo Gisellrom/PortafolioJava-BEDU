@@ -1,10 +1,11 @@
 package Reto_01;
 
+//1. Crea la clase Vuelo
 public class Vuelo {
-    final String codigoVuelo;       // Constante
-    String destino;
-    String horaSalida;
-    Pasajero asientoReservado;      // Se asignará una instancia o null
+    final String codigoVuelo;       // (Constante) -> Código único del vuelo
+    String destino; //Ciudad destino del vuelo
+    String horaSalida; //Hora de salida en fomrato 24h
+    Pasajero asientoReservado;      //(puede ser null) Referencia al pasajero que reservó el asiento
 
     //Constructor del vuelo
     public Vuelo(String codigoVuelo, String destino, String horaSalida) {
@@ -14,6 +15,7 @@ public class Vuelo {
         this.asientoReservado = null;
     }
 
+    //Asigna al pasajero si no hay reserva previa
     //Metodo con parámetro y valor de retorno
     public boolean reservarAsiento(Pasajero p) {
         if (asientoReservado == null) {
@@ -24,17 +26,19 @@ public class Vuelo {
         }
     }
 
-    // Metodo con sobrecarga permita reservar con una cadena simples
+    // Metodo con sobrecarga permita reservar
     public boolean reservarAsiento(String nombre, String pasaporte) {
         Pasajero nuevoPasajero = new Pasajero(nombre, pasaporte);
         return reservarAsiento(nuevoPasajero);
     }
 
+    //Elimina al pasajero asignado
     // Metodo sin retorno
     public void cancelarReserva() {
         asientoReservado = null;
     }
 
+    //Muestra la informacion del vuelo y el pasajero
     // Metodo que retorna un String
     public String obtenerItinerario() {
         String info = "✈️ Itinerario del vuelo:\n";
