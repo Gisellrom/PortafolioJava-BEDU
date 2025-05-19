@@ -1,8 +1,8 @@
-package Reto_01;
+package Solucion_Reto_01;
 
 public class DialogoTexto implements GestorDialogo {
     public void mostrarDialogo(PaqueteNarrativo paquete) {
         System.out.println("🎙️ Escena actual: " + paquete.getEscenaActual());
-        System.out.println("Flotando en tu cápsula espacial, detectas una señal desconocida proveniente de una luna cercana...");
+        System.out.println("Una figura misteriosa aparece y te ofrece dos caminos...");
     }
 }
