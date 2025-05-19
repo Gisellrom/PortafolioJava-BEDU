@@ -8,7 +8,7 @@ public class RegistroSimulacion {
 
     public static void main(String[] args) {
         // Paso 2: Definir la ruta del archivo parametros.txt dentro de la carpeta config/
-        Path rutaCarpeta = Paths.get("src/Solucion_Reto_01/config");
+        Path rutaCarpeta = Paths.get("config");
         Path rutaArchivo = rutaCarpeta.resolve("parametros.txt");
 
         // Paso 3: Crear un String con los parámetros de simulación
