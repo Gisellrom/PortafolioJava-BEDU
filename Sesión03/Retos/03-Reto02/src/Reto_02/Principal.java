@@ -1,5 +1,8 @@
 package Reto_02;
 
+/**
+ * Reto 02: Factura con RFC opcional
+ * */
 public class Principal {
     public static void main(String[] args) {
         // Factura con RFC

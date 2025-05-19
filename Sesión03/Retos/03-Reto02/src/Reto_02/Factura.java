@@ -2,11 +2,12 @@ package Reto_02;
 
 import java.util.Optional;
 
+
 public class Factura {
     //Atributos privados para encapsular los datos
-    private Double monto;
-    private String descripcion;
-    private Optional<String> rfc;
+    private Double monto; //Cantidad total de la factura
+    private String descripcion; //Breve concepto de lo facturado
+    private Optional<String> rfc; //RFC del cliente (puede estar presente o no)
 
     //Constructor, inicializar los atributos y convierte el RFC en Optional, puede ser null
     public Factura(Double monto, String descripcion, String rfc) {
