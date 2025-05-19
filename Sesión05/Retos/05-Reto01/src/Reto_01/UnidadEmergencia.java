@@ -7,9 +7,11 @@ public abstract class UnidadEmergencia {
         this.nombre = nombre;
     }
 
+    public abstract void responder();
+
     public void activarUnidad() {
         System.out.println("🚨 Activando unidad: " + nombre);
     }
 
-    public abstract void responder();
+
 }

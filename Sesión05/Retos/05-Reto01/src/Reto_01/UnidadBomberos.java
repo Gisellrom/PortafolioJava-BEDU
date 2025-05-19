@@ -20,6 +20,7 @@ public class UnidadBomberos extends UnidadEmergencia {
         responder();
     }
 
+    //Sobrescribir el método responder() con un mensaje propio
     @Override
     public void responder() {
         System.out.println("🔥 Unidad de bomberos respondiendo a incendio estructural.");

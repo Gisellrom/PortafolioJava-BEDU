@@ -20,6 +20,7 @@ public class Patrulla extends UnidadEmergencia {
         responder();
     }
 
+    //Sobrescribir el método responder() con un mensaje propio
     @Override
     public void responder() {
         System.out.println("🚓 Patrulla atendiendo situación de seguridad ciudadana.");
